@@ -2,6 +2,8 @@
 
 A professional single-page portfolio website for AI, Machine Learning, Data Science, Computer Vision, Robotics, and internship applications.
 
+The content is based on Ziad's latest CV and highlights his reinforcement learning comparison project, technical skills, education, professional qualifications, and robotics awards.
+
 ## Tech Stack
 
 - Next.js with App Router
@@ -10,28 +12,11 @@ A professional single-page portfolio website for AI, Machine Learning, Data Scie
 - Framer Motion
 - Lucide React icons
 
-## Run locally
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Build for production
-
-```bash
-npm run build
-npm run start
-```
-
-## Deploy on Vercel
-
-1. Push this project folder to a GitHub repository.
-2. Go to [https://vercel.com](https://vercel.com) and sign in.
-3. Click **Add New Project** and import the repository.
-4. Keep the default Next.js settings.
-5. Click **Deploy**.
-
-The CV PDF and profile image are stored in the `public/` folder so they are served statically and can be downloaded or optimized by Next.js Image.
+Create an optimized production build with `npm run build`.

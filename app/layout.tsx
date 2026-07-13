@@ -11,9 +11,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ziad Tamer El-Zeiny | AI & Intelligent Systems Portfolio",
     description:
-      "AI student portfolio featuring applied machine learning, robotics, computer vision, and intelligent systems experience.",
-    type: "website"
-  }
+      "AI student portfolio featuring reinforcement learning, machine learning, robotics, computer vision, and intelligent systems projects.",
+    type: "website",
+    locale: "en_US"
+  },
+  keywords: ["Ziad Tamer El-Zeiny", "Artificial Intelligence", "Machine Learning", "Reinforcement Learning", "Computer Vision", "Robotics", "Data Science"],
+  authors: [{ name: "Ziad Tamer El-Zeiny" }],
+  robots: { index: true, follow: true }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

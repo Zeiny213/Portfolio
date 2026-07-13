@@ -7,16 +7,16 @@ export function Projects() {
     <MotionSection id="projects" className="section-container py-16 sm:py-20" aria-labelledby="projects-title">
       <p className="eyebrow">Projects</p>
       <h2 id="projects-title" className="section-title">Applied AI, robotics, and intelligent systems work</h2>
-      <p className="section-copy">Project cards are based on CV evidence and written to highlight practical contribution without overstating experience.</p>
+      <p className="section-copy">A hands-on project connecting reinforcement learning fundamentals, reproducible evaluation, and experimental robot simulation.</p>
 
-      <div className="mt-10 grid gap-6 lg:grid-cols-2">
+      <div className="mt-10 grid gap-6">
         {projects.map((project) => (
           <article key={project.title} className="glass-card flex h-full flex-col p-6 sm:p-8">
             <div className="flex flex-wrap items-center gap-3 text-sm">
               <span className="rounded-full bg-sky-400/12 px-3 py-1 text-sky-200">{project.type}</span>
-              <span className="text-slate-400">{project.period}</span>
             </div>
             <h3 className="mt-5 text-2xl font-bold text-white">{project.title}</h3>
+            <p className="mt-2 text-base font-medium text-sky-200">{project.subtitle}</p>
             <div className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
               <p><span className="font-semibold text-slate-100">Problem: </span>{project.problem}</p>
               <p><span className="font-semibold text-slate-100">Built: </span>{project.built}</p>
@@ -32,11 +32,9 @@ export function Projects() {
             <div className="mt-7">
               {project.link ? (
                 <a href={project.link} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10">
-                  View link <ExternalLink size={15} aria-hidden="true" />
+                  View on GitHub <ExternalLink size={15} aria-hidden="true" />
                 </a>
-              ) : (
-                <span className="inline-flex rounded-full border border-white/10 px-4 py-2 text-sm text-slate-400">No public repository listed in CV</span>
-              )}
+              ) : null}
             </div>
           </article>
         ))}

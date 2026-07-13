@@ -2,7 +2,7 @@ import { About } from "@/components/About";
 import { Certificates } from "@/components/Certificates";
 import { Contact } from "@/components/Contact";
 import { Education } from "@/components/Education";
-import { Experience } from "@/components/Experience";
+import { Honors } from "@/components/Honors";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
@@ -19,7 +19,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Education />
-      <Experience />
+      <Honors />
       <Certificates />
       <Contact />
       <Footer />

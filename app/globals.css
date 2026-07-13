@@ -27,6 +27,12 @@ body::selection {
   background: rgba(56, 189, 248, 0.35);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 a,
 button {
   -webkit-tap-highlight-color: transparent;
