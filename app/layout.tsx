@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Ziad Tamer El-Zeiny | AI & Intelligent Systems Portfolio",
@@ -11,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ziad Tamer El-Zeiny | AI & Intelligent Systems Portfolio",
     description:
-      "AI student portfolio featuring reinforcement learning, machine learning, robotics, computer vision, and intelligent systems projects.",
+      "AI student portfolio featuring reinforcement learning, deep learning, robotics, computer vision, and responsible model evaluation projects.",
     type: "website",
     locale: "en_US"
   },
@@ -23,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

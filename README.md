@@ -2,7 +2,10 @@
 
 A professional single-page portfolio website for AI, Machine Learning, Data Science, Computer Vision, Robotics, and internship applications.
 
-The content is based on Ziad's latest CV and highlights his reinforcement learning comparison project, technical skills, education, professional qualifications, and robotics awards.
+The content is based on Ziad's latest CV and highlights reinforcement learning,
+robotics, and a patient-aware mammography classification audit. The medical
+imaging project is presented without performance claims because its historical
+dataset contains conflicting duplicate labels and requires authoritative repair.
 
 ## Tech Stack
 

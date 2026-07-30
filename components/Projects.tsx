@@ -6,14 +6,15 @@ export function Projects() {
   return (
     <MotionSection id="projects" className="section-container py-16 sm:py-20" aria-labelledby="projects-title">
       <p className="eyebrow">Projects</p>
-      <h2 id="projects-title" className="section-title">Applied AI, robotics, and intelligent systems work</h2>
-      <p className="section-copy">A hands-on project connecting reinforcement learning fundamentals, reproducible evaluation, and experimental robot simulation.</p>
+      <h2 id="projects-title" className="section-title">Applied AI, robotics, and responsible model evaluation</h2>
+      <p className="section-copy">Projects spanning reinforcement learning, robot simulation, deep learning, and evidence-based data integrity checks.</p>
 
       <div className="mt-10 grid gap-6">
         {projects.map((project) => (
           <article key={project.title} className="glass-card flex h-full flex-col p-6 sm:p-8">
             <div className="flex flex-wrap items-center gap-3 text-sm">
               <span className="rounded-full bg-sky-400/12 px-3 py-1 text-sky-200">{project.type}</span>
+              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-300">{project.status}</span>
             </div>
             <h3 className="mt-5 text-2xl font-bold text-white">{project.title}</h3>
             <p className="mt-2 text-base font-medium text-sky-200">{project.subtitle}</p>

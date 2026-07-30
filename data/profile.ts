@@ -10,9 +10,9 @@ export const profile = {
   cvPath: "/Ziad-Tamer-El-Zeiny-CV.pdf",
   imagePath: "/ziad-tamer-profile.jpeg",
   summary:
-    "Artificial Intelligence student at the Arab Academy for Science, Technology & Maritime Transport, specializing in Intelligent Systems. I have hands-on experience in machine learning, reinforcement learning, computer vision, and robotics, supported by practical work with Python, NumPy, Gymnasium, and Webots.",
+    "Artificial Intelligence student at the Arab Academy for Science, Technology & Maritime Transport, specializing in Intelligent Systems. I have hands-on experience in machine learning, deep learning, reinforcement learning, computer vision, and robotics through projects built with Python, TensorFlow, NumPy, Gymnasium, Streamlit, and Webots.",
   intro:
-    "I build and evaluate AI systems through coursework and projects. My recent work compares reinforcement learning algorithms in Taxi-v4 and explores how tabular methods can connect with robot navigation in Webots.",
+    "I build and audit AI systems through coursework and projects. My work includes reinforcement learning algorithm comparisons, experimental robot navigation, and patient-aware data validation for a mammography classification workflow.",
   seeking: "Seeking an entry-level internship in AI, Machine Learning, Data Science, or Robotics.",
   links: {
     github: "https://github.com/Zeiny213",
@@ -37,7 +37,7 @@ export const skillGroups = [
     skills: ["Machine Learning", "Deep Learning", "Computer Vision", "Neural Networks", "Reinforcement Learning", "Intelligent Systems"]
   },
   { title: "Robotics & IoT", icon: Bot, skills: ["Robotics", "IoT", "Webots", "Unity"] },
-  { title: "Libraries & Frameworks", icon: Wrench, skills: ["NumPy", "Matplotlib", "Gymnasium", "PyYAML", "PyTest"] },
+  { title: "Libraries & Frameworks", icon: Wrench, skills: ["TensorFlow", "Keras", "NumPy", "pandas", "scikit-learn", "Pillow", "Matplotlib", "Gymnasium", "Streamlit", "PyYAML", "PyTest"] },
   { title: "Web & Database", icon: Database, skills: ["HTML", "CSS", "JavaScript", "MySQL"] },
   { title: "Tools & Languages", icon: Languages, skills: ["Jupyter Notebook", "Google Colab", "Visual Studio Code", "Arabic (Native)", "English (Fluent)"] }
 ];
@@ -47,6 +47,7 @@ export const projects = [
     title: "Reinforcement Learning Algorithm Comparison",
     subtitle: "Taxi-v4 and Webots Navigation",
     type: "Reinforcement Learning / Robotics",
+    status: "Repository available",
     problem:
       "Compare tabular reinforcement learning algorithms in a controlled environment and explore how the same ideas can connect with robot navigation.",
     built:
@@ -55,6 +56,20 @@ export const projects = [
       "Evaluates success rate, reward, steps, and training time, with PyTest coverage for update logic, configuration loading, and reproducibility.",
     technologies: ["Python", "NumPy", "Gymnasium", "Webots", "PyYAML", "Matplotlib", "PyTest"],
     link: "https://github.com/Zeiny213/reinforcement-learning-taxi-webots"
+  },
+  {
+    title: "Patient-Aware Mammography Classification",
+    subtitle: "Data Integrity Audit and Research Pipeline",
+    type: "Deep Learning / Computer Vision",
+    status: "Evaluation pending: data integrity blocker",
+    problem:
+      "Repair a historical mammography classification project while preventing patient and duplicate-image leakage from producing misleading evaluation claims.",
+    built:
+      "Implemented fail-closed duplicate-label validation, deterministic patient-grouped splitting, shared image preprocessing, model-input validation, lightweight tests, and a non-clinical Streamlit research interface.",
+    outcome:
+      "The audit found patient overlap and 742 byte-identical cross-split image groups with conflicting labels. The workflow now rejects the corrupt data by default; model performance remains unverified pending an authoritative dataset.",
+    technologies: ["Python", "TensorFlow", "Keras", "EfficientNetB0", "NumPy", "Pillow", "Streamlit", "Unit Testing"],
+    link: "https://github.com/Zeiny213/patient-aware-mammography-classification"
   }
 ];
 
