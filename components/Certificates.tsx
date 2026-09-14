@@ -17,6 +17,16 @@ export function Certificates() {
           </article>
         ))}
       </div>
+      <div className="mt-8 flex justify-center">
+        <a
+          href="https://drive.google.com/drive/folders/1Bj-RzS3OkJbeT8_umhmZJf1pAXmL9sjw"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="focus-ring inline-flex rounded-full border border-emerald-300/30 bg-emerald-300/10 px-5 py-2.5 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-300/20"
+        >
+           View all certificates ↗
+        </a>
+      </div>
     </MotionSection>
   );
 }
