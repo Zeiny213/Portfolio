@@ -76,7 +76,7 @@ export const projects = [
 export const education = {
   institution: "Arab Academy for Science, Technology & Maritime Transport",
   degree: "Bachelor of Science in Artificial Intelligence — Intelligent Systems",
-  status: "3rd Year, 6th Semester",
+  status: "4th Year, 7th Semester",
   location: "New Alamein, Egypt",
   expected: "Expected 2027",
   coursework: [
