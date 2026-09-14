@@ -7,7 +7,7 @@ export const profile = {
   location: "Damietta, Egypt",
   email: "zzeiny59@gmail.com",
   phone: "01094297902",
-  cvPath: "/Ziad-Tamer-El-Zeiny-CV.pdf",
+  cvPath: "/Ziad-Tamer-El-Zeiny-CV.docx",
   imagePath: "/ziad-tamer-profile.jpeg",
   summary:
     "Artificial Intelligence student at the Arab Academy for Science, Technology & Maritime Transport, specializing in Intelligent Systems. I have hands-on experience in machine learning, deep learning, reinforcement learning, computer vision, and robotics through projects built with Python, TensorFlow, NumPy, Gymnasium, Streamlit, and Webots.",
